@@ -1,0 +1,6 @@
+.collapsible(data-collapsible="accordion")
+- var accordionContent = {'one': ' Lorem ipsum dolor sit amet, consectetur adipisicing elit.', 'two': ' Lorem ipsum dolor sit amet, consectetur adipisicing elit.', 'three': ' Lorem ipsum dolor sit amet, consectetur adipisicing elit.' }
+  each content, title in accordionContent
+    li
+      .collapsible-header: i.material-icons= title
+      .collapsible-body: p= content

@@ -1,0 +1,24 @@
+extends ./layout.jade
+
+block content
+	include ./includes/nav.jade
+	include ./includes/hero
+
+	.container
+		include ./includes/double
+		include ./includes/trio
+		include ./includes/dropdown
+		h1 Some Nice Jade
+		h1 #{dude}
+		- var list = ["one", "two", "three", "four"]
+		- var user = {name: 'john', age: 23, bday: 'feb 24 1988'}	
+		each item in list
+			li= item
+		section
+			p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos cum doloribus rerum, inventore, eligendi nemo excepturi facere aut assumenda vero culpa neque aliquid dolorum quidem hic et itaque natus deleniti!
+		section
+			if user.name
+				h1= user.name
+				p.age= user.age
+				p My birthday is on #{user.bday}
+

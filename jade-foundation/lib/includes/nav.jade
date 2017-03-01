@@ -1,0 +1,28 @@
+.off-canvas-wrap(data-offcanvas)
+  .inner-wrap
+    nav.header
+      a.right-off-canvas-toggle(href="#")
+        .menu
+          .top-bar
+          .middle-bar
+          .bottom-bar
+      // Off Canvas Menu
+    aside.right-off-canvas-menu
+      // whatever you want goes here
+      ul.side-nav.main
+        - each link in ['faster', 'smart', 'easier', 'all you']
+          if link == 'fast'
+            li: a.is-active(href="#")= link
+          else
+            li: a(href="#")= link
+      ul.side-nav.secondary
+        - each item in ['about', 'contact', 'press', 'blog']
+          li: a(href="#")= item
+      ul.inline-list.social
+        - each item in ['facebook', 'pinterest', 'youtube', 'twitter']
+          li: i(class="fi-social-#{item}")
+    section.hero
+      img.logo(src="http://www.fillmurray.com/300/300" alt="logo")
+    // main content goes here  
+    // close the off-canvas menu
+    a.exit-off-canvas

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <head>
+      <title>My Site</title>
+      <meta charset="UT8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link href="dist/materialize.css" rel="stylesheet">
+      <link href="dist/style.css" rel="stylesheet">
+    </head>
+  </head>
+  <body>
+    <div class="row">
+      <div class="col s6 m4"><img src="http://www.fillmurray.com/340/340" alt="..." class="responsive-img">
+        <div class="caption center">
+          <h3>Thumbnail label</h3>
+          <p>something goes here like lorems</p>
+          <p><a href="#" class="btn btn-primary">Button</a></p>
+        </div>
+      </div>
+      <div class="col s6 m4"><img src="http://www.fillmurray.com/340/340" alt="..." class="responsive-img">
+        <div class="caption center">
+          <h3>Thumbnail label</h3>
+          <p>something goes here like lorems</p>
+          <p><a href="#" class="btn btn-primary">Button</a></p>
+        </div>
+      </div>
+      <div class="col s6 m4"><img src="http://www.fillmurray.com/340/340" alt="..." class="responsive-img">
+        <div class="caption center">
+          <h3>Thumbnail label</h3>
+          <p>something goes here like lorems</p>
+          <p><a href="#" class="btn btn-primary">Button</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="page-footer blue accent-4">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">John Meas</h5>
+            <p class="grey-text text-lighten-4">Web Developer and Illustrator    </p>
+          </div>
+          <div class="col l4 offset-l2 s12">     </div>
+          <div class="footer-copyright">
+            <div class="container">© 2014 John Meas<a href="https://johnkmeas.github.io/main-portfolio/" class="grey-text text-lighten-4 right">Back to Main </a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+    <script>
+      $(".button-collapse").sideNav();
+      $('.carousel.carousel-slider').carousel({full_width: true});
+      $(document).ready(function(){
+      $('.slider').slider({full_width: true});
+      });
+      $(document).ready(function(){
+      $('.modal-trigger').leanModal();
+      });
+      $(document).ready(function(){
+      $('.parallax').parallax();
+      });
+      $(document).ready(function(){
+      $('.materialboxed').materialbox();
+      });
+      $(document).ready(function(){
+      $('.carousel').carousel();
+      });
+    </script>
+  </body>
+</html>

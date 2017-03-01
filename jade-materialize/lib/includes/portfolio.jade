@@ -1,0 +1,5 @@
+-var gallery = [ 'desktop-brown.jpg', 'boat.jpg', 'digital-stencil-2.png', 'digital-stencil.png', 'icons.png', 'response-mockup.jpg']
+.row
+	each image in gallery
+		.col.s12
+			img.responsive-img.activator.materialboxed(src="image/#{image}" padding="20px" width="650")

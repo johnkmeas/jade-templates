@@ -1,0 +1,17 @@
+// Optional Classes: bordered, striped, highlight, centered and responsive-table
+mixin tableRow(name, item, price)
+  tr
+    td #{name}
+    td #{item}
+    td $#{price}
+table
+  thead
+    tr
+      th(data-field="id") Name
+      th(data-field="name") Favourite Food
+      th(data-field="price") Item Price
+  tbody
+    +tableRow('John', 'Ice Cream', 5.99)
+    +tableRow('Courtney', 'Salsa and Chips', 10.99)
+    +tableRow('Clifford', 'Bacon', 4.99)
+    +tableRow('Meatball', 'Catnip', 1.99)

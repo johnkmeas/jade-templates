@@ -1,0 +1,24 @@
+// Standard Raised buttons
+// Some useful style classes: btn-large, disabled, btn-flat, btn-floating
+        
+a.waves-effect.waves-light.btn button
+a.waves-effect.waves-light.btn button
+	i.material-icons.left cloud
+a.waves-effect.waves-light.btn button
+	i.material-icons.right cloud
+
+// Submit button
+button.btn.waves-effect.waves-light(type="submit" name="action") Submit
+	i.material-icons.right send
+
+
+- var icons = {'insert_chart': 'red', 'format_quote': 'yellow', 'publish': 'green', 'attach_file': 'blue'}
+// Fixed Action Button using class btn-floating, with optional style classes: horizontal, click-to-toggle
+.fixed-action-btn(style="bottom: 45px; right: 24px;")
+	a.btn-floating.btn-large.red
+		i.large.material-icons mode_edit
+	ul
+		each color, item in icons
+			li: a.btn-floating(class="#{color}")
+				i.material-icons= item
+

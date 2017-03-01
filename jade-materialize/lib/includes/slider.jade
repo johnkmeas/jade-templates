@@ -1,0 +1,13 @@
+mixin slide(heading, content, image)
+  li
+    img(src="http://www.#{image}")
+    .caption.center-align
+      h3 #{heading}
+      h5.light.grey-text.text-lighten-3 #{content}
+.slider
+  ul.slides
+    +slide("Title 1", 'some fancy slogan', 'fillmurray.com/400/200')
+    +slide("Title 2", 'some more fancy slogan', 'fillmurray.com/600/200')
+
+
+

@@ -1,0 +1,35 @@
+.container
+  .row
+    .col-xs-6.col-md-6
+      a(href="#" class="").thumbnail
+        img(src="http://www.fillmurray.com/600/640" alt="...")
+
+    form.col-sm-12.col-md-6
+      .form-group
+        label(for="nameInput") Name
+        input(type="text", aria-describedby="emailHelp", placeholder="Enter Name").form-control#exampleInputEmail1
+        small(id="nameHelp").form-text.text-muted Your information is confidential 
+      .form-group
+        label(for="exampleInputEmail1") Email address
+        input(type="email", aria-describedby="emailHelp", placeholder="Enter email").form-control#exampleInputEmail1
+        small(id="emailHelp").form-text.text-muted We'll never share your email with anyone else.
+      .form-group
+        label(for="exampleSelect1") I need ...
+        select.form-control#exampleSelect1
+          option a website
+          option a redesign
+          option to know what is possible
+      .form-group
+        label(for="exampleTextarea") Additional information
+        textarea.form-control#exampleTextarea(rows="3")
+      .form-group
+        label(for="exampleInputFile") Attach Graphic/Artwork File
+        input(type="file", aria-describedby="fileHelp").form-control-file#exampleInputFile
+        small.form-text.text-muted#fileHelp This is some placeholder block-level help text for the above input. It's a bit lighter and easily wraps to a new line.
+      fieldset.form-group
+        legend Radio buttons
+        .radio
+        - for (var x = 0; x < 3; x++)
+          label options
+            input(type="radio", name="optionsRadios", value="option1", checked)#optionsRadios1
+      button(type="submit").btn-primary Submit

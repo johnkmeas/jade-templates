@@ -1,0 +1,33 @@
+doctype html
+html(lang="en")
+	head
+		include ./includes/head.jade
+	body
+		button(
+			type="button"
+			class="navbar-toggle collapsed"
+			data-toggle="collapse"
+			data-target="#bs-example-navbar-collapse-1"
+			aria-expanded="false"
+			)
+			a(href="#menu-toggle").btn.btn-default
+				span.icon-bar
+		#wrapper
+			#sidebar-wrapper
+				ul.sidebar-nav
+					li.sidebar-brand
+						a(href="#") Start Bootstrap
+					- var navLinks = ['home', 'portfolio', 'about', 'contact']
+						for item in navLinks
+							if item == 'home'
+								li: a(href="/#").text-capitalize= item 
+							else
+								li: a(href= "/" + item + '.html').text-capitalize= item
+			#page-content-wrapper
+				h1 We Are
+				.a( href="#menu-toggle").btn.btn-default#menu-toggle About Us
+					span.sr-only
+						- for (var x = 0; x < 3; x++)
+							span.icon-bar
+				.container-fluid
+					block content

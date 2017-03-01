@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <head>
+      <title>My Site</title>
+      <meta charset="UT8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.min.css" rel="stylesheet">
+      <link href="http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet">
+      <link href="dist/style.css" rel="stylesheet">
+    </head>
+  </head>
+  <body>
+    <div data-offcanvas class="off-canvas-wrap">
+      <div class="inner-wrap">
+        <nav class="header"><a href="#" class="right-off-canvas-toggle">
+            <div class="menu">
+              <div class="top-bar"></div>
+              <div class="middle-bar"></div>
+              <div class="bottom-bar"></div>
+            </div></a>
+          <!-- Off Canvas Menu-->
+        </nav>
+        <aside class="right-off-canvas-menu">
+          <!-- whatever you want goes here-->
+          <ul class="side-nav main">
+            <li><a href="#">faster</a></li>
+            <li><a href="#">smart</a></li>
+            <li><a href="#">easier</a></li>
+            <li><a href="#">all you</a></li>
+          </ul>
+          <ul class="side-nav secondary">
+            <li><a href="#">about</a></li>
+            <li><a href="#">contact</a></li>
+            <li><a href="#">press</a></li>
+            <li><a href="#">blog</a></li>
+          </ul>
+          <ul class="inline-list social">
+            <li><i class="fi-social-facebook"></i></li>
+            <li><i class="fi-social-pinterest"></i></li>
+            <li><i class="fi-social-youtube"></i></li>
+            <li><i class="fi-social-twitter"></i></li>
+          </ul>
+        </aside>
+        <section class="hero"><img src="http://www.fillmurray.com/300/300" alt="logo" class="logo"></section>
+        <!-- main content goes here  -->
+        <!-- close the off-canvas menu--><a class="exit-off-canvas"></a>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+      $(function() {
+      	$(".right-off-canvas-toggle, .exit-off-canvas").click(function() {
+      		$(".top-bar").toggleClass("top-bar-close");
+      		$(".middle-bar").toggleClass("middle-bar-close");
+      		$(".bottom-bar").toggleClass("bottom-bar-close");
+      	});
+      });
+    </script>
+  </body>
+</html>

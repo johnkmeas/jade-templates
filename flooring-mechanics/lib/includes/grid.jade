@@ -1,0 +1,51 @@
+.row
+	-
+		grid = [ "2Q==-1.jpg", 
+				"2Q==-2.jpg", 
+				"2Q==-3.jpg", 
+				"2Q==-4.jpg",
+				"2Q==-5.jpg", 
+				"2Q==-6.jpg", 
+				"2Q==-7.jpg", 
+				"2Q==-8.jpg", 
+				"2Q==-9.jpg", 
+				"2Q==-10.jpg", 
+				"2Q==.jpg", 
+				"78BQQAOw==.gif", 
+				"9k=-1.jpg", 
+				"9k=-2.jpg", 
+				"9k=-3.jpg", 
+				"9k=.jpg", 
+				"Z-1.jpg", 
+				"Z-2.jpg", 
+				"Z-3.jpg", 
+				"Z-5.jpg"
+		]
+	for item in grid
+		.col-xs-12.col-md-3
+			.thumbnail
+				a(href="#" class="")
+					img(src="../assets/img/" + item alt="..." class="img-grid")
+ul
+	each val, index in {
+				"Abrasive": "2Q==-1.jpg", 
+				"Nail Guns": "2Q==-2.jpg", 
+				"Filler": "2Q==-3.jpg", 
+				"Blades": "2Q==-4.jpg",
+				"Vents": "2Q==-5.jpg", 
+				"Sports": "2Q==-6.jpg", 
+				"Learning": "2Q==-7.jpg", 
+				"Stain": "2Q==-8.jpg", 
+				"Waterbase Poly": "2Q==-9.jpg", 
+				"Bona Traffic Mix Bottle": "2Q==-10.jpg", 
+				"2Q==.jpg", 
+				"78BQQAOw==.gif", 
+				"9k=-1.jpg", 
+				"9k=-2.jpg", 
+				"9k=-3.jpg", 
+				"9k=.jpg", 
+				"Z-1.jpg", 
+				"Z-2.jpg", 
+				"Z-3.jpg", 
+				"Z-5.jpg"}
+		li= index + ': ' + val

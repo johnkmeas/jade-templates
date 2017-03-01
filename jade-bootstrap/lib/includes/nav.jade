@@ -1,0 +1,32 @@
+nav.navbar.navbar-default.navbar-inverse
+	.container-fluid
+		.navbar-header
+			button(
+			type="button"
+			class="navbar-toggle collapsed"
+			data-toggle="collapse"
+			data-target="#bs-example-navbar-collapse-1"
+			aria-expanded="false"
+			)
+				span.sr-only
+				- for (var x = 0; x < 3; x++)
+					span.icon-bar
+			a(class="navbar-brand", href="#") Brand
+		.collapse.navbar-collapse#bs-example-navbar-collapse-1
+			ul.nav.navbar-nav.navbar-right
+				- var navLinks = ['home', 'portfolio', 'about', 'contact']
+				for item in navLinks
+					if item == 'home'
+						li: a(href="/#").text-capitalize= item 
+					else
+						li: a(href= "/" + item + '.html').text-capitalize= item
+		.collapse.navbar-collapse
+			ul.nav.navbar-nav.navbar-right
+				li.dropdown
+					ul.dropdown-menu
+						li
+							a(href="#") Home
+
+
+
+		

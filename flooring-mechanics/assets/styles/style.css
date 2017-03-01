@@ -1,0 +1,8 @@
+body {
+	background-color: blue;
+}
+
+img.img-grid {
+	max-width: 107px;
+	max-height: 107px;
+}

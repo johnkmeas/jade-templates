@@ -1,0 +1,11 @@
+script(src="https://code.jquery.com/jquery-2.1.4.min.js")
+script(src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.min.js")
+script.
+	$(document).foundation();
+	$(function() {
+		$(".right-off-canvas-toggle, .exit-off-canvas").click(function() {
+			$(".top-bar").toggleClass("top-bar-close");
+			$(".middle-bar").toggleClass("middle-bar-close");
+			$(".bottom-bar").toggleClass("bottom-bar-close");
+		});
+	});

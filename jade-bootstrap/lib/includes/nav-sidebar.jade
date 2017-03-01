@@ -1,0 +1,31 @@
+button(
+            type="button"
+            class="navbar-toggle collapsed"
+            data-toggle="collapse"
+            data-target="#bs-example-navbar-collapse-1"
+            aria-expanded="false"
+            )
+    a(href="#menu-toggle").btn.btn-default
+        span.icon-bar
+
+#wrapper
+    #sidebar-wrapper
+        ul.sidebar-nav
+            li.sidebar-brand
+                a(href="#") Start Bootstrap
+            - var navLinks = ['home', 'portfolio', 'about', 'contact']
+                for item in navLinks
+                    if item == 'home'
+                        li: a(href="/#")= item 
+                    else
+                        li: a(href= "/" + item + '.html')= item
+    #page-content-wrapper
+        .a( href="#menu-toggle").btn.btn-default#menu-toggle Toggle Menu
+            span.sr-only
+                - for (var x = 0; x < 3; x++)
+                    span.icon-bar
+        .container-fluid
+            .row
+                .col-lg-12
+                    p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum consectetur quisquam, assumenda earum, repellat, quas cumque expedita incidunt porro excepturi repudiandae minus nostrum. Aut, architecto neque ut soluta nesciunt eaque.
+                    
